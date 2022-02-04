@@ -26,16 +26,16 @@
     }
   }
   
-  @media screen and (min-width: 600px) {
-    .photo-column {
-      flex: 33%;
-      max-width: 33%;
-    }
+@media screen and (min-width: 600px) {
+  .photo-column {
+    flex: 33%;
+    max-width: 33%;
   }
-  @media screen and (min-width: 1200px) {
-    .photo-column {
-      flex: 25%;
-      max-width: 25%;
-    }
+}
+@media screen and (min-width: 1200px) {
+  .photo-column {
+    flex: 25%;
+    max-width: 25%;
   }
+}
 
