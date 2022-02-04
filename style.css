@@ -11,6 +11,7 @@
         --widthMain: 100%;
         --topNavWidth:100%;
         --text-nav:100%;
+        --titleSize:40px;
     }
 }
 @media screen and (min-width: 500px) {
@@ -18,6 +19,7 @@
         --widthMain: 100%;
         --topNavWidth:90%;
         --text-nav:90%;
+        --titleSize:50px;
     }
 }
 @media screen and (min-width: 900px) {
@@ -25,6 +27,7 @@
         --widthMain: 1000%;
         --topNavWidth:80%;
         --text-nav:80%;
+        --titleSize:60px;
     }
 }
 @media screen and (min-width: 1200px) {
@@ -32,12 +35,14 @@
         --widthMain: 61%;
         --topNavWidth:70%;
         --text-nav:60%;
+        --titleSize:70px;
     }
 }
 @media screen and (min-width: 2000px) {
     :root{
         --widthMain: 30%;
         --topNavWidth:50%;
+        --titleSize:80px;
     }
 }
 .center{
@@ -86,7 +91,7 @@
 .title{
     text-align: center;
     color: red;
-    font-size: 80px;
+    font-size: var(--titleSize);
     font-weight: 900;
     font-family: 'Roboto', sans-serif;
     padding-bottom: 40px;
