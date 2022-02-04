@@ -1,0 +1,121 @@
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans&family=Press+Start+2P&family=Roboto:wght@400;900&display=swap');
+
+*{
+    margin: 0px;
+    padding: 0px;
+    font-family: 'Noto Sans', sans-serif;
+    box-sizing: border-box;
+}
+@media screen and (min-width: 0px) {
+    :root{
+        --widthMain: 100%;
+        --topNavWidth:100%;
+        --text-nav:100%;
+    }
+}
+@media screen and (min-width: 500px) {
+    :root{
+        --widthMain: 100%;
+        --topNavWidth:90%;
+        --text-nav:90%;
+    }
+}
+@media screen and (min-width: 900px) {
+    :root{
+        --widthMain: 1000%;
+        --topNavWidth:80%;
+        --text-nav:80%;
+    }
+}
+@media screen and (min-width: 1200px) {
+    :root{
+        --widthMain: 61%;
+        --topNavWidth:70%;
+        --text-nav:60%;
+    }
+}
+@media screen and (min-width: 2000px) {
+    :root{
+        --widthMain: 30%;
+        --topNavWidth:50%;
+    }
+}
+.center{
+    display: flex;
+    justify-content: center;
+}
+.main-content{
+    height: 4000px;
+    width: var(--widthMain);
+    box-shadow: 0px 0px 10px 0px black;
+    padding: 0px 15px 0px 15px;    
+}
+.top-nav{
+    list-style: none;
+    display: flex;
+    width: var(--topNavWidth);
+    justify-content: space-between;
+    flex-wrap: nowrap;
+    padding-bottom: 35px;
+}
+.top-nav li a{
+    text-decoration: none;
+    color: royalblue;
+    font-size: 15px;
+}
+.top-nav li a:hover{
+    text-decoration: underline;
+}
+.blue-hr{
+    height: 10px;
+    width: 100%;
+    background-color: royalblue;
+}
+.slide-img{
+    padding-bottom: 10px;    
+}
+.conteiner-text-nav{
+    display: flex;
+    justify-content: center;
+}
+.text-nav{
+    width:var(--text-nav);
+    font-size: 14px;
+    padding-bottom: 20px;
+}
+.title{
+    text-align: center;
+    color: red;
+    font-size: 80px;
+    font-weight: 900;
+    font-family: 'Roboto', sans-serif;
+    padding-bottom: 40px;
+}
+.folders{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+.folder{
+    width: 200px;
+    height: 200px;
+    margin: 30px 10px;
+    background-image: url(/folder-icon-macos-1.webp);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: contain;
+    transition: 0.5s;
+}
+.folder:hover{
+    transform: scale(1.05);
+    cursor: pointer;
+}
+.text-folder{
+    text-align: center;
+    position: relative;
+    top: 200px;
+}   
+a{
+    text-decoration: none;
+    color: black;
+}
